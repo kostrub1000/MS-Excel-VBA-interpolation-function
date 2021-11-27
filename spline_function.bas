@@ -5,18 +5,6 @@ Public Function spline(x As Double, Xrange As Range, Yrange As Range)
 
 Dim intervals As New Collection
 
-Dim a As Integer, b As Integer, c As Integer, d As Integer
-
-a = Xrange.Item(1).Row
-b = Xrange.Item(Xrange.Count).Row
-c = Xrange.Item(1).Column
-d = Yrange.Item(1).Column
-
-Set Xrange = Range(Cells(a, c), Cells(b, c))
-Set Yrange = Range(Cells(a, d), Cells(b, d))
-
-
-
 Dim n As Integer
 n = Xrange.Count
 
